@@ -1,8 +1,8 @@
 import {
   ClerkProvider,
-  // SignInButton,
+  SignInButton,
   SignedIn,
-  // SignedOut,
+  SignedOut,
   UserButton,
 } from "@clerk/nextjs";
 import "./globals.css";
