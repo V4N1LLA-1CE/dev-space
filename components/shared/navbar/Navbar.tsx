@@ -20,7 +20,7 @@ const Navbar = () => {
           alt="DevSpace"
           className="pb-1"
         />
-        <p className="h2-bold text-watermelon-950 dark:text-watermelon-100 max-sm:hidden">
+        <p className="h2-bold font-mono text-watermelon-950 dark:text-watermelon-100 max-sm:hidden">
           DEV<span className="text-primary-500">SPACE</span>
         </p>
       </Link>
