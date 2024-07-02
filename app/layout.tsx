@@ -1,12 +1,13 @@
 import {
   ClerkProvider,
-  SignInButton,
+  // SignInButton,
   SignedIn,
-  SignedOut,
+  // SignedOut,
   UserButton,
 } from "@clerk/nextjs";
 import "./globals.css";
 import React from "react";
+import { ThemeProvider } from "@/context/ThemeProvider";
 
 import type { Metadata } from "next";
 
@@ -21,16 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider
-      appearance={{
-        elements: {
-          formButtonPrimary: "bg-watermelon-500",
-          footerActionLink: "primary-text-gradient hover:text-primary-500",
-        },
-      }}
-    >
-      <html lang="en">
-        <body>
+    <html lang="en">
+      <body>
+        <ClerkProvider
+          appearance={{
+            elements: {
+              formButtonPrimary: "bg-watermelon-500",
+              footerActionLink: "primary-text-gradient hover:text-primary-500",
+            },
+          }}
+        >
           {/* Enable sign in button while signed out */}
           {/* <SignedOut> */}
           {/*   <SignInButton /> */}
@@ -38,9 +39,9 @@ export default function RootLayout({
           <SignedIn>
             <UserButton />
           </SignedIn>
-          {children}
-        </body>
-      </html>
-    </ClerkProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </ClerkProvider>
+      </body>
+    </html>
   );
 }
