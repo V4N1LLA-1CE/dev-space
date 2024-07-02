@@ -18,9 +18,24 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          500: "#FF7000",
+          500: "#f5487f",
           100: "#FFF1E6",
         },
+
+        watermelon: {
+          "50": "#fff1f1",
+          "100": "#ffe4e5",
+          "200": "#fdced2",
+          "300": "#fca5ad",
+          "400": "#f97382",
+          "500": "#f35b6f",
+          "600": "#de2042",
+          "700": "#bb1536",
+          "800": "#9d1435",
+          "900": "#861534",
+          "950": "#4b0616",
+        },
+
         dark: {
           100: "#000000",
           200: "#0F1117",
@@ -36,7 +51,7 @@ module.exports = {
           500: "#7B8EC8",
           400: "#858EAD",
         },
-        "accent-blue": "#1DA1F2",
+        "accent-blue": "#a3cdff",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
