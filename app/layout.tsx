@@ -8,6 +8,7 @@ import {
 import "./globals.css";
 import React from "react";
 import { ThemeProvider } from "@/context/ThemeProvider";
+import { Inter, Space_Grotesk } from "next/font/google";
 
 import type { Metadata } from "next";
 
@@ -22,26 +23,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <ClerkProvider
-          appearance={{
-            elements: {
-              formButtonPrimary: "bg-watermelon-500",
-              footerActionLink: "primary-text-gradient hover:text-primary-500",
-            },
-          }}
-        >
-          {/* Enable sign in button while signed out */}
-          {/* <SignedOut> */}
-          {/*   <SignInButton /> */}
-          {/* </SignedOut> */}
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
+    <ClerkProvider
+      appearance={{
+        elements: {
+          formButtonPrimary: "bg-watermelon-500",
+          footerActionLink: "primary-text-gradient hover:text-primary-500",
+        },
+      }}
+    >
+      <html lang="en">
+        <body>
           <ThemeProvider>{children}</ThemeProvider>
-        </ClerkProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
