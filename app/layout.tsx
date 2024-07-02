@@ -31,9 +31,10 @@ export default function RootLayout({
     >
       <html lang="en">
         <body>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
+          {/* Enable sign in button while signed out */}
+          {/* <SignedOut> */}
+          {/*   <SignInButton /> */}
+          {/* </SignedOut> */}
           <SignedIn>
             <UserButton />
           </SignedIn>
