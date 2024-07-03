@@ -198,4 +198,8 @@
       rgba(19, 22, 28, 0.7) 100%
     );
   }
+
+  .primary-gradient {
+    background: linear-gradient(129deg, #f5487f 0%, #fdced2 100%);
+  }
 }
