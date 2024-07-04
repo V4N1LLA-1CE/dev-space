@@ -4,17 +4,25 @@ This project is currently a work in progress. I created this project as an upgra
 
 ## How to view this project?
 
-Clone the project into your local machine
+1. Clone the project into your local machine
 ```bash
 git clone https://github.com/V4N1LLA-1CE/dev-space.git ./dev-space
 ```
 
-Change into project directory
+
+2. Change into project directory
 ```bash
 cd dev-space/
 ```
 
-Run the dev script
+
+3. Install dependencies
+```bash
+npm install
+```
+
+
+4. Run the dev script
 ```bash
 npm run dev
 # or
@@ -25,9 +33,11 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Current tech stack being used:
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+## Current tech stack being used:
 - Nextjs
 - Tailwindcss
 - Reactjs
