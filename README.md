@@ -1,46 +1,15 @@
 # DEV-SPACE
 
-This project is currently a work in progress. I created this project as an upgrade to my previous project [dev-sphere](https://github.com/V4N1LLA-1CE/dev-sphere) in order to learn react and attempt to build a more complex application. 
+A comprehensive all-in-one platform for developers to post discussions, blogs, showcase profiles, and seek for jobs. (A combination of Reddit, StackOverflow, and LinkedIn)
 
-## How to view this project?
+This project is currently a work in progress. I created this project as an upgrade to my previous project [dev-sphere](https://github.com/V4N1LLA-1CE/dev-sphere) in order to dive deeper into reactjs & nextjs.
 
-1. Clone the project into your local machine
-```bash
-git clone https://github.com/V4N1LLA-1CE/dev-space.git ./dev-space
-```
-
-
-2. Change into project directory
-```bash
-cd dev-space/
-```
-
-
-3. Install dependencies
-```bash
-npm install
-```
-
-
-4. Run the dev script
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-
-5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
+The project is currently unable to be viewed due to local environment variables and api keys being used.
 
 ## Current tech stack being used:
-- Nextjs
-- Tailwindcss
-- Reactjs
-- Typescript/Javascript
-- Shadcn/ui
 
+- [Nextjs](https://nextjs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Reactjs](https://react.dev/)
+- [Typescript/Javascript](https://www.typescriptlang.org/)
+- [Shadcn/ui](https://ui.shadcn.com/)
