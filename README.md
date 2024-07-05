@@ -13,3 +13,8 @@ The project is currently unable to be viewed due to local environment variables 
 - [Reactjs](https://react.dev/)
 - [Typescript/Javascript](https://www.typescriptlang.org/)
 - [Shadcn/ui](https://ui.shadcn.com/)
+
+## Design tools and assets
+
+- [UI Colors (tailwind custom)](https://uicolors.app/create)
+- [FreeSVG] (https://www.svgrepo.com/)
