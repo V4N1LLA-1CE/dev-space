@@ -38,7 +38,7 @@ const NavContent = () => {
                 alt={item.label}
                 width={20}
                 height={20}
-                className={`${isActive ? "" : "invert-colors"}`}
+                className={`${isActive ? "" : "invert-colors"} pb-[0.3rem]`}
               />
               <p
                 className={`${isActive ? "base-bold" : "base-medium text-dark100_light900"} `}

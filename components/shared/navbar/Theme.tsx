@@ -62,7 +62,7 @@ const Theme = () => {
                   alt={item.label}
                   width={16}
                   height={16}
-                  className={`${mode === item.value ? "active-theme" : ""} mr-auto ${item.value === "dark" ? "size-[14px]" : ""}`}
+                  className={`${mode === item.value ? "active-theme" : ""} mr-auto ${item.value === "dark" ? "size-[13px]" : ""} ${mode !== "dark" && item.value === "dark" ? "fix-color-to-blue" : ""}`}
                 />
                 <p className="body-semibold px-3 text-light-500 ${mode === item.value ? 'text-primary-500' : 'text-dark100_light900}">
                   {item.label}

@@ -8,37 +8,37 @@ export const themes = [
 
 export const sidebarLinks: SidebarLink[] = [
   {
-    imgURL: "/assets/icons/home.svg",
+    imgURL: "/assets/icons/sidebar-home-icon.svg",
     route: "/",
     label: "Home",
   },
   {
-    imgURL: "/assets/icons/users.svg",
-    route: "/community",
-    label: "Community",
+    imgURL: "/assets/icons/sidebar-devs-icon.svg",
+    route: "/developers",
+    label: "Developers",
   },
   {
-    imgURL: "/assets/icons/star.svg",
-    route: "/collection",
-    label: "Collections",
+    imgURL: "/assets/icons/sidebar-star-icon.svg",
+    route: "/favourites",
+    label: "Favourites",
   },
   {
-    imgURL: "/assets/icons/suitcase.svg",
-    route: "/jobs",
-    label: "Find Jobs",
+    imgURL: "/assets/icons/sidebar-suitcase-icon.svg",
+    route: "/devjobs",
+    label: "Job Board",
   },
   {
-    imgURL: "/assets/icons/tag.svg",
+    imgURL: "/assets/icons/sidebar-tag-icon.svg",
     route: "/tags",
     label: "Tags",
   },
   {
-    imgURL: "/assets/icons/user.svg",
+    imgURL: "/assets/icons/sidebar-user-icon.svg",
     route: "/profile",
     label: "Profile",
   },
   {
-    imgURL: "/assets/icons/question.svg",
+    imgURL: "/assets/icons/sidebar-question-icon.svg",
     route: "/ask-question",
     label: "Ask a question",
   },

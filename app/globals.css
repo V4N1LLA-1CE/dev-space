@@ -59,8 +59,13 @@ body {
 }
 
 .active-theme {
-  filter: invert(41%) sepia(74%) saturate(3273%) hue-rotate(318deg)
-    brightness(104%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(44%) sepia(30%) saturate(4375%)
+    hue-rotate(314deg) brightness(97%) contrast(98%);
+}
+
+.fix-color-to-blue {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(10%) saturate(1647%)
+    hue-rotate(189deg) brightness(82%) contrast(89%);
 }
 
 .light-gradient {
