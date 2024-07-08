@@ -22,7 +22,7 @@ const Theme = () => {
   return (
     <Menubar className="relative border-none bg-transparent shadow-none">
       <MenubarMenu>
-        <MenubarTrigger className="focus:bg-light-900 data-[state=open]:bg-light-900 dark:focus:bg-dark-200 dark:data-[state=open]:bg-dark-200">
+        <MenubarTrigger className="focus:bg-light-900 dark:focus:bg-dark-200">
           {mode === "light" ? (
             <Image
               src="/assets/icons/sun.svg"
@@ -41,7 +41,7 @@ const Theme = () => {
             />
           )}
         </MenubarTrigger>
-        <MenubarContent className="m-w-[120px] absolute -right-12 mt-3 rounded border py-2 dark:border-dark-400 dark:bg-dark-300">
+        <MenubarContent className="absolute -right-12 mt-3 rounded-2xl border py-2 dark:border-dark-400 dark:bg-dark-300">
           {themes.map((item) => {
             return (
               <MenubarItem
@@ -55,14 +55,14 @@ const Theme = () => {
                     localStorage.removeItem("theme");
                   }
                 }}
-                className="flex-center gap-4 px-2.5 py-2 dark:focus:bg-dark-400"
+                className="flex justify-between focus:bg-light-700 dark:focus:bg-dark-400"
               >
                 <Image
                   src={item.icon}
                   alt={item.label}
                   width={16}
                   height={16}
-                  className={`${mode === item.value ? "active-theme" : ""} mr-auto ${item.value === "dark" ? "size-[13px]" : ""} ${mode !== "dark" && item.value === "dark" ? "fix-color-to-blue" : ""}`}
+                  className={`${mode === item.value ? "active-theme" : ""} ${item.value === "dark" ? "size-[13px]" : ""} ${mode !== "dark" && item.value === "dark" ? "fix-color-to-blue" : ""}`}
                 />
                 <p className="body-semibold px-3 text-light-500 ${mode === item.value ? 'text-primary-500' : 'text-dark100_light900}">
                   {item.label}
