@@ -17,4 +17,4 @@ The project is currently unable to be viewed due to local environment variables 
 ## Design tools and assets
 
 - [UI Colors (tailwind custom)](https://uicolors.app/create)
-- [FreeSVG] (https://www.svgrepo.com/)
+- [FreeSVG](https://www.svgrepo.com/)
