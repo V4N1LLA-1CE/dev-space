@@ -13,6 +13,7 @@ The project is currently unable to be viewed due to local environment variables 
 - [Reactjs](https://react.dev/)
 - [Typescript/Javascript](https://www.typescriptlang.org/)
 - [Shadcn/ui](https://ui.shadcn.com/)
+- [Clerk - auth](https://clerk.com/)
 
 ## Design tools and assets
 
