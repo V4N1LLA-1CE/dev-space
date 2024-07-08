@@ -1,4 +1,4 @@
-# DEV-SPACE
+# DEVSPACE
 
 A comprehensive all-in-one platform for developers to post discussions, blogs, showcase profiles, and seek for jobs. (A combination of Reddit, StackOverflow, and LinkedIn)
 
