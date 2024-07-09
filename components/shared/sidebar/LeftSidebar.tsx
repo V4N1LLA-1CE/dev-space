@@ -29,7 +29,7 @@ const LeftbarContent = () => {
                 className={`${isActive ? "" : "invert-colors"} `}
               />
               <p
-                className={`${isActive ? "base-bold" : "base-medium text-dark100_light900"}`}
+                className={`${isActive ? "base-bold" : "base-medium text-dark100_light900"} hidden lg:block`}
               >
                 {item.label}
               </p>
