@@ -46,7 +46,7 @@ const ProfileSection = () => {
               alt="Logout"
               width={20}
               height={20}
-              className="invert-colors mb-[0.15rem] mr-1"
+              className="mb-[0.15rem] mr-1"
             />
             <p className="max-lg:hidden">Logout</p>
           </button>

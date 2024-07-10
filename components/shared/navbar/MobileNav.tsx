@@ -21,7 +21,7 @@ const NavContent = () => {
   const pathname = usePathname();
 
   return (
-    <section className="flex h-full flex-col gap-2 ">
+    <section className="flex h-full flex-col gap-2">
       {sidebarLinks.map((item) => {
         const isActive =
           (pathname.includes(item.route) && item.route.length > 1) ||
@@ -66,10 +66,10 @@ const MobileNav = () => {
         />
       </SheetTrigger>
       <SheetContent
-        side="left"
-        className="background-light900_dark200 border-none"
+        side="top"
+        className="background-light900_dark200 rounded-b-3xl border-none"
       >
-        <Link href="/" className="flex items-center gap-1">
+        <Link href="/" className="mr-3 flex items-center justify-center gap-1">
           <Image
             src="/assets/images/devspace-icon.svg"
             width={46}
@@ -82,22 +82,22 @@ const MobileNav = () => {
           </p>
         </Link>
 
-        <div className="mt-6 flex h-full flex-col justify-between border-none pb-16">
+        <div className="mt-6 flex h-full flex-col items-center justify-between gap-10 border-none pb-16">
           <SheetClose asChild>
-            <div className="overflow-auto">
+            <div className="light-border-2 overflow-auto border-y-2 py-2">
               <NavContent />
             </div>
           </SheetClose>
 
           <SignedIn>
             <SignOutButton>
-              <button className="base-medium semibold flex items-center justify-center rounded-lg bg-watermelon-500 p-3 text-light-900">
+              <button className="base-medium semibold flex w-2/5 items-center justify-center rounded-lg bg-watermelon-500 p-3 text-light-900">
                 <Image
                   src="/assets/icons/logout-icon.svg"
                   alt="Logout"
                   width={20}
                   height={20}
-                  className="invert-colors mb-[0.15rem] mr-1"
+                  className="mb-[0.15rem] mr-1"
                 />
                 <p className="">Logout</p>
               </button>
@@ -108,7 +108,7 @@ const MobileNav = () => {
             <div className="z-50 flex flex-col gap-3">
               <SheetClose asChild>
                 <Link href="/sign-in">
-                  <Button className="small-medium btn-secondary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none">
+                  <Button className="small-medium btn-secondary min-h-[41px] w-full rounded-lg px-20 py-3 shadow-none">
                     <span className="primary-text-gradient">Log In</span>
                   </Button>
                 </Link>
