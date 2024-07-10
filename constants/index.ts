@@ -6,6 +6,24 @@ export const themes = [
   { value: "system", label: "System", icon: "/assets/icons/computer.svg" },
 ];
 
+export const accessLinks: SidebarLink[] = [
+  {
+    imgURL: "/assets/icons/profile-user-icon.svg",
+    route: "/profile",
+    label: "Profile",
+  },
+  {
+    imgURL: "/assets/icons/sign-in-icon.svg",
+    route: "/sign-in",
+    label: "Sign In",
+  },
+  {
+    imgURL: "/assets/icons/create-user-icon.svg",
+    route: "/sign-up",
+    label: "Sign Up",
+  },
+];
+
 export const sidebarLinks: SidebarLink[] = [
   {
     imgURL: "/assets/icons/sidebar-home-icon.svg",
@@ -13,14 +31,9 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Home",
   },
   {
-    imgURL: "/assets/icons/sidebar-devs-icon.svg",
-    route: "/developers",
-    label: "Developers",
-  },
-  {
-    imgURL: "/assets/icons/sidebar-star-icon.svg",
-    route: "/favourites",
-    label: "Favourites",
+    imgURL: "/assets/icons/profile-user-icon.svg",
+    route: "/profile",
+    label: "Profile",
   },
   {
     imgURL: "/assets/icons/sidebar-suitcase-icon.svg",
@@ -28,19 +41,24 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Job Board",
   },
   {
-    imgURL: "/assets/icons/sidebar-tag-icon.svg",
-    route: "/tags",
-    label: "Tags",
-  },
-  {
-    imgURL: "/assets/icons/sidebar-user-icon.svg",
-    route: "/profile",
-    label: "Profile",
+    imgURL: "/assets/icons/sidebar-devs-icon.svg",
+    route: "/developers",
+    label: "Developers",
   },
   {
     imgURL: "/assets/icons/sidebar-question-icon.svg",
     route: "/ask-question",
     label: "Ask a question",
+  },
+  {
+    imgURL: "/assets/icons/sidebar-tag-icon.svg",
+    route: "/tags",
+    label: "Tags",
+  },
+  {
+    imgURL: "/assets/icons/sidebar-star-icon.svg",
+    route: "/favourites",
+    label: "Favourites",
   },
 ];
 

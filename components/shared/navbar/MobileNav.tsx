@@ -13,8 +13,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { SignedOut } from "@clerk/nextjs";
-import { sidebarLinks } from "@/constants";
+import { SignedOut, SignedIn } from "@clerk/nextjs";
+import { sidebarLinks, accessLinks } from "@/constants";
 import { usePathname } from "next/navigation";
 
 const NavContent = () => {
@@ -41,7 +41,7 @@ const NavContent = () => {
                 className={`${isActive ? "" : "invert-colors"} pb-[0.3rem]`}
               />
               <p
-                className={`${isActive ? "base-bold" : "base-medium text-dark100_light900"} `}
+                className={`${isActive ? "base-bold" : "base-medium text-dark100_light900 "} `}
               >
                 {item.label}
               </p>
@@ -88,6 +88,7 @@ const MobileNav = () => {
               <NavContent />
             </div>
           </SheetClose>
+
           <SignedOut>
             <div className="z-50 flex flex-col gap-3">
               <SheetClose asChild>

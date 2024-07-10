@@ -52,6 +52,20 @@ module.exports = {
           400: "#858EAD",
         },
         "accent-blue": "#a3cdff",
+
+        cerulean: {
+          "50": "#f1f5fd",
+          "100": "#dfe8fa",
+          "200": "#c6d7f7",
+          "300": "#9fbef1",
+          "400": "#719ce9",
+          "500": "#4f79e2",
+          "600": "#3b5dd5",
+          "700": "#324bc6",
+          "800": "#2e3d9f",
+          "900": "#2a387e",
+          "950": "#1e254d",
+        },
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
