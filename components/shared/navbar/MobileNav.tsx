@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { SignedOut, SignedIn } from "@clerk/nextjs";
+import { SignedOut, SignedIn, SignOutButton } from "@clerk/nextjs";
 import { sidebarLinks, accessLinks } from "@/constants";
 import { usePathname } from "next/navigation";
 
@@ -88,6 +88,21 @@ const MobileNav = () => {
               <NavContent />
             </div>
           </SheetClose>
+
+          <SignedIn>
+            <SignOutButton>
+              <button className="base-medium semibold flex items-center justify-center rounded-lg bg-watermelon-500 p-3 text-light-900">
+                <Image
+                  src="/assets/icons/logout-icon.svg"
+                  alt="Logout"
+                  width={20}
+                  height={20}
+                  className="invert-colors mb-[0.15rem] mr-1"
+                />
+                <p className="">Logout</p>
+              </button>
+            </SignOutButton>
+          </SignedIn>
 
           <SignedOut>
             <div className="z-50 flex flex-col gap-3">

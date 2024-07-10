@@ -4,7 +4,13 @@ import React from "react";
 import { sidebarLinks, accessLinks } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
-import { SignedOut, SignedIn, UserButton, useUser } from "@clerk/nextjs";
+import {
+  SignedOut,
+  SignedIn,
+  UserButton,
+  useUser,
+  SignOutButton,
+} from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
 
 const ProfileSection = () => {
@@ -15,7 +21,7 @@ const ProfileSection = () => {
 
   return (
     <>
-      <section className="background-light900_dark200 light-border-2  rounded-md border p-4 max-sm:hidden">
+      <section className="background-light900_dark200 light-border-2  flex flex-col gap-2 rounded-md border p-4 max-sm:hidden">
         <div className="flex max-h-12 items-center gap-2 overflow-hidden lg:pr-4">
           <UserButton
             afterSignedOutUrl="/"
@@ -32,6 +38,19 @@ const ProfileSection = () => {
             {username.length <= 12 ? username : `${username.slice(0, 10)}...`}
           </p>
         </div>
+
+        <SignOutButton>
+          <button className="base-medium semibold mt-3 flex items-center justify-center rounded-lg bg-watermelon-500 p-2 text-light-900">
+            <Image
+              src="/assets/icons/logout-icon.svg"
+              alt="Logout"
+              width={20}
+              height={20}
+              className="invert-colors mb-[0.15rem] mr-1"
+            />
+            <p className="max-lg:hidden">Logout</p>
+          </button>
+        </SignOutButton>
       </section>
     </>
   );
