@@ -59,18 +59,24 @@ const ProfileSection = () => {
 const AccessButtons = () => {
   const accessItems = [accessLinks[1], accessLinks[2]];
   return (
-    <section className="flex flex-col gap-2 p-4 max-sm:hidden">
+    <section className="flex flex-col items-center justify-center gap-4 p-4 max-sm:hidden lg:flex-row lg:gap-6 lg:px-6">
       {accessItems.map((item) => {
         return (
           <div key={item.route}>
-            <Link href={item.route} className="flex justify-start gap-4 p-4">
+            <Link
+              href={item.route}
+              className="item-center flex flex-col justify-center p-4"
+            >
               <Image
                 src={item.imgURL}
                 alt={item.label}
                 width={20}
                 height={20}
-                className="invert-colors mb-[0.23rem]"
+                className="invert-colors mx-auto mb-[0.23rem]"
               />
+              <p className="base-medium text-dark100_light900 text-xs max-lg:hidden">
+                {item.label}
+              </p>
             </Link>
           </div>
         );
