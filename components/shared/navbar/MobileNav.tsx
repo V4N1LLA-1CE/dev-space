@@ -31,7 +31,7 @@ const NavContent = () => {
           <SheetClose asChild key={item.route}>
             <Link
               href={item.route}
-              className={`${isActive ? "primary-gradient rounded-lg text-light-900" : "text-dark-300_light900"} flex items-center justify-start gap-4 bg-transparent p-4`}
+              className={`${isActive ? "primary-gradient rounded-xl text-light-900" : "text-dark-300_light900"} flex items-center justify-start gap-4 bg-transparent p-4`}
             >
               <Image
                 src={item.imgURL}
@@ -91,7 +91,7 @@ const MobileNav = () => {
 
           <SignedIn>
             <SignOutButton>
-              <button className="base-medium semibold flex w-2/5 items-center justify-center rounded-lg bg-watermelon-500 p-3 text-light-900">
+              <button className="base-medium semibold flex w-52 items-center justify-center rounded-lg bg-watermelon-600 p-3 text-light-900">
                 <Image
                   src="/assets/icons/logout-icon.svg"
                   alt="Logout"
@@ -108,14 +108,14 @@ const MobileNav = () => {
             <div className="z-50 flex flex-col gap-3">
               <SheetClose asChild>
                 <Link href="/sign-in">
-                  <Button className="small-medium btn-secondary min-h-[41px] w-full rounded-lg px-20 py-3 shadow-none">
+                  <Button className="small-medium btn-secondary min-h-[41px] w-full rounded-lg p-3 px-20 shadow-none">
                     <span className="primary-text-gradient">Log In</span>
                   </Button>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href="/sign-up">
-                  <Button className="text-dark400_light900 small-medium light-border-2 btn-tertiary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none">
+                  <Button className="text-dark400_light900 small-medium light-border-2 btn-tertiary min-h-[41px] w-full rounded-lg p-3 shadow-none">
                     Sign Up
                   </Button>
                 </Link>

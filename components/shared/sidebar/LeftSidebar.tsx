@@ -21,7 +21,7 @@ const ProfileSection = () => {
 
   return (
     <>
-      <section className="background-light900_dark200 light-border-2  flex flex-col gap-2 rounded-md border p-4 max-sm:hidden">
+      <section className="background-light900_dark200 light-border-2  flex flex-col gap-2 rounded-md border p-[0.85rem] max-sm:hidden">
         <div className="flex max-h-12 items-center gap-2 overflow-hidden p-[0.35rem] lg:pr-4">
           <UserButton
             afterSignedOutUrl="/"
@@ -40,7 +40,7 @@ const ProfileSection = () => {
         </div>
 
         <SignOutButton>
-          <button className="base-medium semibold mt-3 flex items-center justify-center rounded-lg bg-watermelon-500 p-3 text-light-900">
+          <button className="base-medium semibold mt-3 flex items-center justify-center rounded-lg bg-watermelon-600 p-2 text-light-900">
             <Image
               src="/assets/icons/logout-icon.svg"
               alt="Logout"
@@ -88,7 +88,7 @@ const AccessButtons = () => {
 const LeftbarContent = () => {
   const pathname = usePathname();
   return (
-    <section className="flex flex-col gap-2 p-4">
+    <section className="flex flex-col gap-1 p-4">
       {sidebarLinks.map((item) => {
         const isActive =
           (pathname.includes(item.route) && item.route.length > 1) ||
@@ -97,7 +97,7 @@ const LeftbarContent = () => {
           <div key={item.route}>
             <Link
               href={item.route}
-              className={`${isActive ? "primary-gradient rounded-lg text-light-900" : ""} mr-auto flex justify-start gap-4 p-4 `}
+              className={`${isActive ? "primary-gradient rounded-xl text-light-900" : ""} mr-auto flex justify-start gap-4 p-4 `}
             >
               <Image
                 src={item.imgURL}
@@ -122,19 +122,21 @@ const LeftbarContent = () => {
 const LeftSidebar = () => {
   return (
     <>
-      <div className="background-light900_dark200 light-border-2 fixed z-40 ml-6 mt-32 rounded-lg border max-sm:hidden">
-        <LeftbarContent />
-      </div>
-      <div className="fixed bottom-4 z-30 ml-6">
-        <SignedOut>
-          <div className="background-light900_dark200 light-border-2 rounded-md border max-sm:hidden">
-            <AccessButtons />
-          </div>
-        </SignedOut>
-        <SignedIn>
-          <ProfileSection />
-        </SignedIn>
-      </div>
+      <section className="sticky bottom-0 left-0 flex h-screen flex-col justify-between gap-2 overflow-y-scroll pb-6 pl-6 pt-32">
+        <div className="background-light900_dark200 light-border-2 rounded-lg border max-sm:hidden">
+          <LeftbarContent />
+        </div>
+        <div className="">
+          <SignedOut>
+            <div className="background-light900_dark200 light-border-2 rounded-md border max-sm:hidden">
+              <AccessButtons />
+            </div>
+          </SignedOut>
+          <SignedIn>
+            <ProfileSection />
+          </SignedIn>
+        </div>
+      </section>
     </>
   );
 };
