@@ -59,7 +59,7 @@ const ProfileSection = () => {
 const AccessButtons = () => {
   const accessItems = [accessLinks[1], accessLinks[2]];
   return (
-    <section className="flex flex-col items-center justify-center gap-4 p-4 max-sm:hidden lg:flex-row lg:gap-6 lg:px-6">
+    <section className="flex flex-col items-center justify-center gap-4 p-4 max-sm:hidden lg:flex-row lg:gap-6 lg:px-6 lg:py-1">
       {accessItems.map((item) => {
         return (
           <div key={item.route}>
