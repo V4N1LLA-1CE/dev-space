@@ -22,7 +22,7 @@ const ProfileSection = () => {
   return (
     <>
       <section className="background-light900_dark200 light-border-2  flex flex-col gap-2 rounded-md border p-[0.85rem] max-sm:hidden">
-        <div className="flex max-h-12 items-center gap-2 overflow-hidden p-[0.35rem] lg:pr-4">
+        <div className="flex max-h-12 items-center justify-center gap-2 overflow-hidden p-[0.35rem] lg:pr-4">
           <UserButton
             afterSignedOutUrl="/"
             appearance={{
@@ -40,13 +40,13 @@ const ProfileSection = () => {
         </div>
 
         <SignOutButton>
-          <button className="base-medium semibold mt-3 flex items-center justify-center rounded-lg bg-watermelon-600 p-2 text-light-900">
+          <button className="base-medium semibold mt-3 flex items-center justify-center rounded-lg bg-watermelon-600 p-2 py-4 text-light-900 lg:py-2">
             <Image
               src="/assets/icons/logout-icon.svg"
               alt="Logout"
               width={20}
               height={20}
-              className="mb-[0.15rem] mr-1"
+              className="mb-[0.15rem]"
             />
             <p className="max-lg:hidden">Logout</p>
           </button>
