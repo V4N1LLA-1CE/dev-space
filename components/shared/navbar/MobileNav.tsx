@@ -23,7 +23,7 @@ const NavContent = () => {
   return (
     <section className="flex h-full flex-col gap-2">
       {sidebarLinks.map((item) => {
-        const isActive =
+        const onRoute =
           (pathname.includes(item.route) && item.route.length > 1) ||
           pathname === item.route;
 
@@ -31,17 +31,17 @@ const NavContent = () => {
           <SheetClose asChild key={item.route}>
             <Link
               href={item.route}
-              className={`${isActive ? "primary-gradient rounded-xl text-light-900" : "text-dark-300_light900"} flex items-center justify-start gap-4 bg-transparent p-4`}
+              className={`${onRoute ? "primary-gradient rounded-2xl text-light-900" : "text-dark-300_light900"} flex items-center justify-start gap-4 bg-transparent p-4`}
             >
               <Image
                 src={item.imgURL}
                 alt={item.label}
                 width={20}
                 height={20}
-                className={`${isActive ? "" : "invert-colors"} pb-[0.3rem]`}
+                className={`${onRoute ? "" : "invert-colors"} pb-[0.3rem]`}
               />
               <p
-                className={`${isActive ? "base-bold" : "base-medium text-dark100_light900 "} `}
+                className={`${onRoute ? "base-bold" : "base-medium text-dark100_light900 "} `}
               >
                 {item.label}
               </p>
@@ -91,15 +91,15 @@ const MobileNav = () => {
 
           <SignedIn>
             <SignOutButton>
-              <button className="base-medium semibold flex w-52 items-center justify-center rounded-lg bg-watermelon-600 p-3 text-light-900">
+              <button className="base-medium flex w-52 items-center justify-center gap-2 rounded-lg bg-watermelon-600 p-2.5 text-light-900">
                 <Image
                   src="/assets/icons/logout-icon.svg"
                   alt="Logout"
                   width={20}
                   height={20}
-                  className="mb-[0.15rem] mr-1"
+                  className="mb-[0.15rem]"
                 />
-                <p className="">Logout</p>
+                <p className="pr-3">Logout</p>
               </button>
             </SignOutButton>
           </SignedIn>

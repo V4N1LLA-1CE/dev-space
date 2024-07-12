@@ -21,7 +21,7 @@ const ProfileSection = () => {
 
   return (
     <>
-      <section className="background-light900_dark200 light-border-2  flex flex-col gap-2 rounded-md border p-[0.85rem] max-sm:hidden">
+      <section className="background-light900_dark200 light-border-2 flex flex-col gap-2 rounded-md border p-[0.85rem] max-sm:hidden">
         <div className="flex max-h-12 items-center justify-center gap-2 overflow-hidden p-[0.35rem] lg:pr-4">
           <UserButton
             afterSignedOutUrl="/"
@@ -34,7 +34,7 @@ const ProfileSection = () => {
               },
             }}
           />
-          <p className="base-medium text-dark100_light900 max-w-32 overflow-scroll font-semibold uppercase max-lg:hidden">
+          <p className="base-medium text-dark100_light900 primary-text-gradient max-w-32 font-semibold uppercase max-lg:hidden">
             {username.length <= 12 ? username : `${username.slice(0, 10)}...`}
           </p>
         </div>
@@ -48,7 +48,7 @@ const ProfileSection = () => {
               height={20}
               className="mb-[0.15rem]"
             />
-            <p className="max-lg:hidden">Logout</p>
+            <p className="pr-2 max-lg:hidden">Logout</p>
           </button>
         </SignOutButton>
       </section>
@@ -90,24 +90,24 @@ const LeftbarContent = () => {
   return (
     <section className="flex flex-col gap-1 p-4">
       {sidebarLinks.map((item) => {
-        const isActive =
+        const onRoute =
           (pathname.includes(item.route) && item.route.length > 1) ||
           pathname === item.route;
         return (
           <div key={item.route}>
             <Link
               href={item.route}
-              className={`${isActive ? "primary-gradient rounded-xl text-light-900" : ""} mr-auto flex justify-start gap-4 p-4 `}
+              className={`${onRoute ? "primary-gradient rounded-2xl text-light-900" : ""} mr-auto flex justify-start gap-4 p-4 `}
             >
               <Image
                 src={item.imgURL}
                 alt={item.label}
                 width={20}
                 height={20}
-                className={`${isActive ? "" : "invert-colors"} mb-[0.23rem]`}
+                className={`${onRoute ? "" : "invert-colors"} mb-[0.23rem]`}
               />
               <p
-                className={`${isActive ? "base-bold" : "base-medium text-dark100_light900"} hidden lg:block`}
+                className={`${onRoute ? "base-bold" : "base-medium text-dark100_light900"} hidden lg:block`}
               >
                 {item.label}
               </p>
@@ -122,7 +122,7 @@ const LeftbarContent = () => {
 const LeftSidebar = () => {
   return (
     <>
-      <section className="sticky bottom-0 left-0 flex h-screen flex-col justify-between gap-2 overflow-y-scroll pb-6 pl-6 pt-32">
+      <section className="sticky bottom-0 left-0 flex h-dvh flex-col justify-between gap-2 overflow-y-scroll pb-6 pl-6 pt-32 max-sm:hidden">
         <div className="background-light900_dark200 light-border-2 rounded-lg border max-sm:hidden">
           <LeftbarContent />
         </div>
