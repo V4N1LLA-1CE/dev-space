@@ -1,25 +1,19 @@
-import Image from "next/image";
 import React from "react";
 import { Input } from "@/components/ui/input";
 
 const GlobalSearch = () => {
   return (
     <div className="relative w-full max-w-[600px] max-lg:hidden">
-      <div className="background-light800_darkgradient relative m-auto flex min-h-[56px] grow items-center gap-1 rounded-xl px-2">
-        <Image
-          src="/assets/icons/globalsearch-icon.svg"
-          alt="Search"
-          width={25}
-          height={25}
-          className="cursor-pointer pb-[0.1rem]"
-        />
-
+      <div className="relative m-auto flex min-h-[56px] grow items-center gap-1 rounded-xl bg-light-800 px-2 dark:bg-dark-300">
         <Input
           type="text"
-          placeholder="Search globally"
+          placeholder="Search globally..."
           value=""
-          className="paragraph-regular no-focus placeholder background-light800_darkgradient border-none caret-watermelon-400 shadow-none outline-none focus:placeholder:opacity-50"
+          className="paragraph-regular no-focus placeholder background-light800_dark300 border-none caret-watermelon-400 shadow-none outline-none focus:placeholder:opacity-50"
         />
+        <div className="light-border-2 rounded-lg border-2 bg-light-700 px-2.5 py-1 text-light-500 dark:bg-dark-200">
+          ⌘K
+        </div>
       </div>
     </div>
   );
