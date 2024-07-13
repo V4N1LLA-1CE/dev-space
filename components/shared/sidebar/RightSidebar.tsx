@@ -66,7 +66,7 @@ const PopularTags = () => {
             key={item.id}
             className="small-regular flex w-full items-center justify-between"
           >
-            <Tag tagName={item.tag_name} />
+            <Tag tagName={item.tag_name.toUpperCase()} />
             <p>{item.tag_count}</p>
           </div>
         );

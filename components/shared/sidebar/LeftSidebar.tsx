@@ -40,7 +40,7 @@ const ProfileSection = () => {
         </div>
 
         <SignOutButton>
-          <button className="base-medium semibold mt-3 flex items-center justify-center rounded-xl bg-watermelon-600 p-4  text-light-900 lg:py-2">
+          <button className="base-medium semibold mt-3 flex items-center justify-center gap-2 rounded-xl bg-watermelon-600 p-4  text-light-900 lg:py-2">
             <Image
               src="/assets/icons/logout-icon.svg"
               alt="Logout"

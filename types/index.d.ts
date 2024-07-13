@@ -6,6 +6,12 @@ export interface SidebarLink {
   label: string;
 }
 
+export interface FilterType {
+  id: number;
+  label: string;
+  value: string;
+}
+
 export interface TopQuestionType {
   id: number;
   title: string;
