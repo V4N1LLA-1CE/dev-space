@@ -2,26 +2,35 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { TopQuestionType, PopularTagType } from "@/types";
+import Tag from "../misc/tag";
+
+const topQuestionsList: TopQuestionType[] = [
+  {
+    id: 1,
+    title: "How to specify to NextJS components whether to use SSR or CSR?",
+  },
+  {
+    id: 2,
+    title:
+      "How to pass data through react components without using prop drilling?",
+  },
+  { id: 3, title: "How to center a div with tailwindcss?" },
+  {
+    id: 4,
+    title:
+      "What are the differences between arrow function and normal function in Javascript?",
+  },
+];
+
+const popularTagsList: PopularTagType[] = [
+  { id: 1, tag_name: "NextJS", tag_count: 3 },
+  { id: 2, tag_name: "Javascript", tag_count: 2 },
+  { id: 3, tag_name: "Go", tag_count: 1 },
+  { id: 4, tag_name: "Docker", tag_count: 1 },
+  { id: 5, tag_name: "React", tag_count: 1 },
+];
 
 const TopQuestions = () => {
-  const topQuestionsList: TopQuestionType[] = [
-    {
-      id: 1,
-      title: "How to specify to NextJS components whether to use SSR or CSR?",
-    },
-    {
-      id: 2,
-      title:
-        "How to pass data through react components without using prop drilling?",
-    },
-    { id: 3, title: "How to center a div with tailwindcss?" },
-    {
-      id: 4,
-      title:
-        "What are the differences between arrow function and normal function in Javascript?",
-    },
-  ];
-
   return (
     <section className="text-dark400_light700 flex w-[300px] flex-col items-start gap-6">
       <p className="h3-bold text-dark200_light900">Top Questions</p>
@@ -48,13 +57,6 @@ const TopQuestions = () => {
 };
 
 const PopularTags = () => {
-  const popularTagsList: PopularTagType[] = [
-    { id: 1, tag_name: "NextJS", tag_count: 3 },
-    { id: 2, tag_name: "Javascript", tag_count: 2 },
-    { id: 3, tag_name: "Go", tag_count: 1 },
-    { id: 4, tag_name: "Docker", tag_count: 1 },
-    { id: 5, tag_name: "React", tag_count: 1 },
-  ];
   return (
     <section className="text-dark400_light700 flex w-[300px] flex-col items-start gap-6">
       <p className="h3-bold text-dark200_light900">Popular Tags</p>
@@ -64,11 +66,7 @@ const PopularTags = () => {
             key={item.id}
             className="small-regular flex w-full items-center justify-between"
           >
-            <Link href="/tags">
-              <button className="btn-secondary shadow-light-100_darknone text-light400_light500 rounded px-3 py-2">
-                {item.tag_name}
-              </button>
-            </Link>
+            <Tag tagName={item.tag_name} />
             <p>{item.tag_count}</p>
           </div>
         );
