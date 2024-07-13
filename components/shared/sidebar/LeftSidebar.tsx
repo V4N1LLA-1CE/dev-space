@@ -21,7 +21,7 @@ const ProfileSection = () => {
 
   return (
     <>
-      <section className="background-light900_dark200 light-border-2 flex flex-col gap-2 rounded-md border p-[0.85rem] max-sm:hidden">
+      <section className="background-light900_dark200 light-border flex flex-col gap-2 rounded-md border p-[0.85rem] max-sm:hidden">
         <div className="flex max-h-12 items-center justify-center gap-2 overflow-hidden p-[0.35rem] lg:pr-4">
           <UserButton
             afterSignedOutUrl="/"
@@ -40,7 +40,7 @@ const ProfileSection = () => {
         </div>
 
         <SignOutButton>
-          <button className="base-medium semibold mt-3 flex items-center justify-center rounded-lg bg-watermelon-600 p-2 py-4 text-light-900 lg:py-2">
+          <button className="base-medium semibold mt-3 flex items-center justify-center rounded-xl bg-watermelon-600 p-4  text-light-900 lg:py-2">
             <Image
               src="/assets/icons/logout-icon.svg"
               alt="Logout"
@@ -97,14 +97,14 @@ const LeftbarContent = () => {
           <div key={item.route}>
             <Link
               href={item.route}
-              className={`${onRoute ? "primary-gradient rounded-2xl text-light-900" : ""} mr-auto flex justify-start gap-4 p-4 `}
+              className={`${onRoute ? "primary-gradient rounded-2xl text-light-900" : ""} flex justify-start gap-4 p-4 `}
             >
               <Image
                 src={item.imgURL}
                 alt={item.label}
                 width={20}
                 height={20}
-                className={`${onRoute ? "" : "invert-colors"} mb-[0.23rem]`}
+                className={`${onRoute ? "" : "invert-colors"} mx-1 mb-[0.23rem]`}
               />
               <p
                 className={`${onRoute ? "base-bold" : "base-medium text-dark100_light900"} hidden lg:block`}
@@ -122,13 +122,13 @@ const LeftbarContent = () => {
 const LeftSidebar = () => {
   return (
     <>
-      <section className="sticky bottom-0 left-0 flex h-dvh flex-col justify-between gap-2 overflow-y-scroll pb-6 pl-6 pt-32 max-sm:hidden">
-        <div className="background-light900_dark200 light-border-2 rounded-lg border max-sm:hidden">
+      <section className="sticky bottom-0 left-0 flex h-dvh flex-col justify-between gap-2 overflow-y-scroll pb-6 pl-6 pt-32 max-sm:hidden lg:w-[270px]">
+        <div className="background-light900_dark200 light-border rounded-lg border max-sm:hidden">
           <LeftbarContent />
         </div>
         <div className="">
           <SignedOut>
-            <div className="background-light900_dark200 light-border-2 rounded-md border max-sm:hidden">
+            <div className="background-light900_dark200 light-border rounded-md border max-sm:hidden">
               <AccessButtons />
             </div>
           </SignedOut>
