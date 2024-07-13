@@ -1,6 +1,6 @@
 # DEVSPACE
 
-A comprehensive all-in-one platform for developers to post discussions, blogs, showcase profiles, and seek for jobs. (A combination of Reddit, StackOverflow, and LinkedIn)
+A comprehensive all-in-one platform for developers to post qestions, showcase profiles, and seek for jobs. (A combination of Reddit, StackOverflow, and LinkedIn)
 
 This project is currently a work in progress. I created this project as an upgrade to my previous project [dev-sphere](https://github.com/V4N1LLA-1CE/dev-sphere) in order to dive deeper into reactjs & nextjs.
 
