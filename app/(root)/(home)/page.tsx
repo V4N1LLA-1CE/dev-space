@@ -15,7 +15,7 @@ const HomeScreen = () => {
         </Link>
       </div>
 
-      <div className="mt-11 flex items-center justify-between gap-10 md:flex-col md:items-start">
+      <div className="mt-11 flex items-center justify-between gap-5 md:flex-col md:items-start">
         <LocalSearch />
         <Filter />
       </div>

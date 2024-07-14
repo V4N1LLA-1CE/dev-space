@@ -77,11 +77,11 @@ const PopularTags = () => {
 
 const RightSidebar = () => {
   return (
-    <section className="sticky bottom-0 right-0 flex h-dvh flex-col items-center  gap-4 overflow-y-scroll pb-6 pr-6 pt-32 max-xl:hidden">
-      <div className="background-light900_dark200 light-border rounded-lg border p-4">
+    <section className="sticky bottom-0 right-0 flex h-dvh flex-col items-center gap-4  overflow-y-scroll pb-6 pl-1 pr-6 pt-32 max-xl:hidden">
+      <div className="background-light900_dark200 light-border rounded-lg border p-4 shadow-md">
         <TopQuestions />
       </div>
-      <div className="background-light900_dark200 light-border rounded-lg border p-4">
+      <div className="background-light900_dark200 light-border rounded-lg border p-4 shadow-md">
         <PopularTags />
       </div>
     </section>

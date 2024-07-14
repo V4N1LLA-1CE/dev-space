@@ -21,7 +21,7 @@ const ProfileSection = () => {
 
   return (
     <>
-      <section className="background-light900_dark200 light-border flex flex-col gap-2 rounded-md border p-[0.85rem] max-sm:hidden">
+      <section className="background-light900_dark200 light-border flex flex-col gap-2 rounded-md border p-[0.85rem] shadow-md max-sm:hidden">
         <div className="flex max-h-12 items-center justify-center gap-2 overflow-hidden p-[0.35rem] lg:pr-4">
           <UserButton
             afterSignedOutUrl="/"
@@ -122,13 +122,13 @@ const LeftbarContent = () => {
 const LeftSidebar = () => {
   return (
     <>
-      <section className="sticky bottom-0 left-0 flex h-dvh flex-col justify-between gap-2 overflow-y-scroll pb-6 pl-6 pt-32 max-sm:hidden lg:w-[270px]">
-        <div className="background-light900_dark200 light-border rounded-lg border max-sm:hidden">
+      <section className="sticky bottom-0 left-0 flex h-dvh flex-col justify-between gap-2 overflow-y-scroll pb-6 pl-6 pr-1 pt-32 max-sm:hidden lg:w-[270px]">
+        <div className="background-light900_dark200 light-border rounded-lg border shadow-md max-sm:hidden">
           <LeftbarContent />
         </div>
         <div className="">
           <SignedOut>
-            <div className="background-light900_dark200 light-border rounded-md border max-sm:hidden">
+            <div className="background-light900_dark200 light-border rounded-md border shadow-md max-sm:hidden">
               <AccessButtons />
             </div>
           </SignedOut>
