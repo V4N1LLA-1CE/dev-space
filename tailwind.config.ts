@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        "jb-mono": ["Jetbrains Mono", "sans-serif"],
+      },
       colors: {
         primary: {
           500: "#f5487f",

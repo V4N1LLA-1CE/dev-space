@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { TopQuestionType, PopularTagType } from "@/types";
+import { TopQuestionType, TagType } from "@/types";
 import Tag from "../misc/tag";
 
 const topQuestionsList: TopQuestionType[] = [
@@ -22,7 +22,7 @@ const topQuestionsList: TopQuestionType[] = [
   },
 ];
 
-const popularTagsList: PopularTagType[] = [
+const popularTagsList: TagType[] = [
   { id: 1, tag_name: "NextJS", tag_count: 3 },
   { id: 2, tag_name: "Javascript", tag_count: 2 },
   { id: 3, tag_name: "Go", tag_count: 1 },

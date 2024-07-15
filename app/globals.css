@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 @import url("../styles/theme.css");
 
 body {
@@ -77,7 +79,7 @@ body {
 }
 
 .primary-text-gradient {
-  background: linear-gradient(129deg, #f35b6f 0%, #fca5ad 100%);
+  background: linear-gradient(129deg, #f5487f 0%, #fca5ad 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

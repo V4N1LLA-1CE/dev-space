@@ -17,7 +17,7 @@ export interface TopQuestionType {
   title: string;
 }
 
-export interface PopularTagType {
+export interface TagType {
   id: number;
   tag_name: string;
   tag_count: number;
