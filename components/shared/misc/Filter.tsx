@@ -8,7 +8,7 @@ const filters: FilterType[] = [
   { id: 1, label: "Most Recent", value: "most recent" },
   { id: 2, label: "Recommended", value: "recommended" },
   { id: 3, label: "Popular", value: "popular" },
-  { id: 5, label: "Unanswered", value: "unanswered" },
+  { id: 4, label: "Unanswered", value: "unanswered" },
 ];
 
 const Filter = () => {
