@@ -3,35 +3,44 @@ import Link from "next/link";
 import LocalSearch from "@/components/shared/search/LocalSearch";
 import Filter from "@/components/shared/misc/Filter";
 import NoResult from "@/components/shared/misc/NoResult";
+import QuestionCard from "@/components/cards/QuestionCard";
 
 const questions = [
-  // {
-  //   _id: 1,
-  //   title: "How to center a div",
-  //   tags: [
-  //     { id: 1, tag_name: "TailwindCSS", tag_count: 1 },
-  //     { id: 2, tag_name: "CSS", tag_count: 1 },
-  //     { id: 3, tag_name: "Styling", tag_count: 1 },
-  //   ],
-  //   author: "Jake the Brogrammer",
-  //   upvotes: 10,
-  //   views: 128,
-  //   answers: 2,
-  //   createdAt: "2021-09-01T12:00:00.000Z",
-  // },
-  // {
-  //   _id: 2,
-  //   title: "How to apply custom CSS in NextJS",
-  //   tags: [
-  //     { id: 1, tag_name: "NextJS", tag_count: 1 },
-  //     { id: 2, tag_name: "CSS", tag_count: 1 },
-  //   ],
-  //   author: "Jake the Brogrammer",
-  //   upvotes: 7,
-  //   views: 26,
-  //   answers: 0,
-  //   createdAt: "2020-09-01T12:00:00.000Z",
-  // },
+  {
+    _id: 1,
+    title: "How to center a div",
+    tags: [
+      { _id: "1", name: "TailwindCSS" },
+      { _id: "2", name: "CSS" },
+      { _id: "3", name: "Styling" },
+    ],
+    author: {
+      _id: "123",
+      name: "Jake the Brogrammer",
+      picture: "https://randomuser.me/api/portraits/men/1.jpg",
+    },
+    upvotes: 10,
+    views: 128,
+    answers: [], // Assuming answers are objects, you can put actual answer objects here
+    createdAt: new Date("2024-07-15T12:00:00.000Z"),
+  },
+  {
+    _id: 2,
+    title: "How to apply custom CSS in NextJS",
+    tags: [
+      { _id: "1", name: "NextJS" },
+      { _id: "2", name: "CSS" },
+    ],
+    author: {
+      _id: "123",
+      name: "John Doe",
+      picture: "https://randomuser.me/api/portraits/men/1.jpg",
+    },
+    upvotes: 7,
+    views: 26,
+    answers: [], // Assuming no answers
+    createdAt: new Date("2024-07-11T12:00:00.000Z"),
+  },
 ];
 
 const HomeScreen = () => {
@@ -54,7 +63,19 @@ const HomeScreen = () => {
       <div className="mt-11 flex flex-col gap-6">
         {questions.length > 0 ? (
           questions.map((question) => {
-            return <div key={question._id}>{question.title}</div>;
+            return (
+              <QuestionCard
+                key={question._id}
+                _id={question._id}
+                title={question.title}
+                tags={question.tags}
+                author={question.author}
+                upvotes={question.upvotes}
+                views={question.views}
+                answers={question.answers}
+                createdAt={question.createdAt}
+              />
+            );
           })
         ) : (
           <NoResult

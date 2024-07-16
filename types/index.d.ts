@@ -13,12 +13,12 @@ export interface FilterType {
 }
 
 export interface TopQuestionType {
-  id: number;
+  id: string;
   title: string;
 }
 
 export interface TagType {
-  id: number;
+  id: string;
   tag_name: string;
   tag_count: number;
 }
