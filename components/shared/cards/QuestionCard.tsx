@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import Tag from "../shared/misc/Tag";
-import Metric from "../shared/misc/Metric";
+import Tag from "../misc/Tag";
+import Metric from "../misc/Metric";
 import { calcTime, formatNum } from "@/lib/utils";
 
 interface QuestionProps {

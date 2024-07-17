@@ -3,7 +3,7 @@ import Link from "next/link";
 import LocalSearch from "@/components/shared/search/LocalSearch";
 import Filter from "@/components/shared/misc/Filter";
 import NoResult from "@/components/shared/misc/NoResult";
-import QuestionCard from "@/components/cards/QuestionCard";
+import QuestionCard from "@/components/shared/cards/QuestionCard";
 
 const questions = [
   {
