@@ -11,7 +11,7 @@ const GlobalSearch = () => {
           value=""
           className="paragraph-regular no-focus placeholder background-light800_dark300 cursor-pointer border-none caret-transparent shadow-none outline-none"
         />
-        <div className="light-border-2 rounded-lg border-2 bg-light-700 px-2.5 py-1 text-light-500 dark:bg-dark-200">
+        <div className="light-border-2 rounded-lg border-2 bg-light-700 px-[6px] py-px text-light-500 dark:bg-dark-200">
           ⌘K
         </div>
       </div>

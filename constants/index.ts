@@ -60,6 +60,11 @@ export const sidebarLinks: SidebarLink[] = [
     route: "/favourites",
     label: "Favourites",
   },
+  {
+    imgURL: "/assets/icons/blog-icon.svg",
+    route: "/blogs",
+    label: "Blogs",
+  },
 ];
 
 export const BADGE_CRITERIA = {

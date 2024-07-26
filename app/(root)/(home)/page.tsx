@@ -50,7 +50,7 @@ const HomeScreen = () => {
         <h1 className="h1-bold text-dark100_light900">All Questions</h1>
         <Link href="/ask-question" className="flex justify-end ">
           <button className="primary-gradient min-h-[46px] rounded-lg px-4 py-3 text-light-900 shadow-md">
-            Ask a Question
+            <span className="body-regular">Ask a Question</span>
           </button>
         </Link>
       </div>

@@ -41,7 +41,7 @@ const TopQuestions = () => {
             href="ask-question"
             className="flex w-full items-center justify-between gap-4"
           >
-            <p>{item.title}</p>
+            <p className="hover:underline">{item.title}</p>
             <Image
               className="invert-colors"
               src="/assets/icons/right-arrow.svg"
