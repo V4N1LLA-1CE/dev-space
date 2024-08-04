@@ -1,8 +1,8 @@
 # DEVSPACE
 
-A comprehensive all-in-one platform for developers to post questions, showcase profiles, and seek for jobs. (A combination of Reddit, StackOverflow, and LinkedIn)
+A comprehensive all-in-one platform for developers to post questions, showcase profiles, and seek for jobs.
 
-This project is currently a work in progress. I created this project as an upgrade to my previous project [dev-sphere](https://github.com/V4N1LLA-1CE/dev-sphere) in order to dive deeper into React and also learn about backends. I got this project idea from an open source repo and decided to put my own spin on it.
+This project is currently a work in progress. I created this project as an upgrade to my previous project [dev-sphere](https://github.com/V4N1LLA-1CE/dev-sphere) in order to dive deeper into backends. I got this project idea from an open source repo and decided to put my own spin on it.
 
 The project is currently unable to be viewed due to local environment variables and api keys being used.<br>
 Here is a sneek peek!
@@ -16,6 +16,7 @@ Here is a sneek peek!
 - [Reactjs](https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Clerk - auth](https://clerk.com/)
+- [Shadcn/ui](https://ui.shadcn.com/)
 
 ## Design tools and assets
 
