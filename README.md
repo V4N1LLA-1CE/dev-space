@@ -1,5 +1,7 @@
 # DEVSPACE
 
+### DEVELOPMENT HAS SLOWED DOWN
+
 A comprehensive all-in-one platform for developers to post questions, showcase profiles, and seek for jobs.
 
 This project is currently a work in progress. I created this project as an upgrade to my previous project [dev-sphere](https://github.com/V4N1LLA-1CE/dev-sphere) in order to dive deeper into backends. I got this project idea from an open source repo and decided to put my own spin on it.
